@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+.allBack{
+  width: 100%;
+  height: calc(100vh);
+  background: linear-gradient(to right, #c2e59c, #64b3f4);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.menuCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.18);
+  height: 100%;
+  width: 80px;
+}
+
+.funBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 25%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow:5px 2px 6px #7e7e7e;
+}
+
+.funBlock:active{
+  box-shadow:5px 2px 6px #000 inset
+}
+
+.maskS{
+  height: 100%;
+  width: calc(100vw - 80px);
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  -webkit-mask-image: url(../img/mask.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 800px 800px;
+}
